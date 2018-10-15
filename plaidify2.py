@@ -83,6 +83,6 @@ if __name__ == '__main__':
     plaid_path, _ = os.path.splitext(plaid_name)
     _, img_filename = os.path.split(img_path)
     _, plaid_filename = os.path.split(plaid_path)
-    out_name = '{}-{}-test.png'.format(img_filename, plaid_filename)
+    out_name = '{}-{}.png'.format(img_filename, plaid_filename)
 
     imsave(out_name, plaided)
